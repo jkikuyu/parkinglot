@@ -1,9 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-package com.parkinglot;
+package com.parkinglot.model;
 
 
 import java.beans.PropertyChangeListener;
@@ -200,7 +196,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "parkinglotview.Users[userid=" + id + "]";
+        return "parkinglotview.User[id=" + id + "]";
     }
 
     public void addPropertyChangeListener(PropertyChangeListener listener) {

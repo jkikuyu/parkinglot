@@ -19,6 +19,7 @@ public class ParkingLotConnect {
     /* the default framework is embedded*/
     private String framework = "embedded";
     private String driver = "org.hsqldb.jdbc.JDBCDriver";
+ 
     private String protocol = "jdbc:hsqldb:";
     private Connection con;
     /*
