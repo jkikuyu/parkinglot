@@ -11,7 +11,7 @@
     <properties>
       <property name="toplink.jdbc.user" value="sa"/>
       <property name="toplink.jdbc.password" value=""/>
-      <property name="toplink.jdbc.url" value="jdbc:hsqldb:file:d:/hsqldb/data/parkinglot"/>
+      <property name="toplink.jdbc.url" value="jdbc:hsqldb:file:c:\Users\DIT-INTERN\Documents\NetBeansProjects\parkinglot\data"/>
       <property name="toplink.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
       <property name="toplink.ddl-generation" value="drop-and-create-tables"/>
     </properties>

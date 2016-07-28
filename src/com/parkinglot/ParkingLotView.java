@@ -56,7 +56,7 @@ import org.jdesktop.beansbinding.PropertyStateEvent;
  */
 public class ParkingLotView extends JFrame{
     private JScrollPane masterScrollPane;
-    protected  JPanel statusPanel,toolPanel;
+    protected  JPanel statusPanel,toolPanel,currentPanel;
     private BindingGroup bindingGroup;
     GridBagConstraints grdBagConstraints;
     private JTable masterTable;
@@ -171,7 +171,7 @@ public class ParkingLotView extends JFrame{
 
         masterScrollPane = new JScrollPane();
         masterTable = new JTable();
-        //userDetailPanel = new JPanel();
+        
 
         btnSave = new JButton();
         btnRefresh = new JButton();
@@ -298,11 +298,15 @@ public class ParkingLotView extends JFrame{
     }
     @org.jdesktop.application.Action
     public void clientForm(){
-
     }
     @org.jdesktop.application.Action
     public void userForm(){
+        if(userDetailPanel != null && userDetailPanel.isVisible()==false){
+         userDetailPanel.setVisible(true);
+         btnSave.setEnabled(true);
+         currentPanel = userDetailPanel;
 
+        }
     }
 
 
@@ -310,15 +314,6 @@ public class ParkingLotView extends JFrame{
     public void parkingLotDetail() {
         JOptionPane.showMessageDialog(this,"Invalid password. " +
                 "Try again.","Error Message",JOptionPane.ERROR_MESSAGE);
-    }
-    @org.jdesktop.application.Action
-    public void showUserDetail() {
-
-        if(userDetailPanel != null){
-         userDetailPanel.setVisible(true);
-         btnSave.setEnabled(true);
-
-        }
     }
 
 

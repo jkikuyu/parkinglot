@@ -44,7 +44,7 @@ public class ParkingLotConnect {
                 System.err.println("\nNot allowed to access the JDBC driver " + driver);
                 iae.printStackTrace(System.err);
             }
-            con = DriverManager.getConnection("jdbc:hsqldb:data\\drugeffects", "SA", "");
+            con = DriverManager.getConnection("jdbc:hsqldb:data\\parkinglot", "SA", "");
         } catch (SQLException ex) {
             Logger.getLogger(ParkingLotConnect.class.getName()).log(Level.SEVERE, null, ex);
         }
